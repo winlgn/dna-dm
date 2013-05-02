@@ -252,7 +252,7 @@ public class DecisionEntropy implements IAttributeSelection {
     }
 
     /**
-     * 返回v的H(v)混乱度 
+     * 返回v的H(v)混乱度的单次运算 
      */
     public static double LOG(double v) {
         return v * Math.log(v) / Math.log(2);
@@ -272,6 +272,7 @@ public class DecisionEntropy implements IAttributeSelection {
         return value;
     }
 
+    //返回seqValue的混乱度
     public static double calcSeqValue(int[] seqValue, int num) {
         int[] numForClass = new int[num];
 
